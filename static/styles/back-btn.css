@@ -1,0 +1,11 @@
+.arrow {
+display: inline-block;
+width: 15px;
+height: 15px;
+border-top: 3px solid #5aa5b9;
+border-right: 3px solid #5aa5b9;
+}
+
+.arrow-left {
+transform: rotate(-135deg);
+}

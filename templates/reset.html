@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main class="formPage my-xl">
+    <div class="content-box">
+        <div class="formWrapper">
+            <li><a href=""><span class="arrow arrow-left" ></span></a></li>
+            <!-- <a class="backButton" href="#"><i class="im im-angle-left"></i></a> -->
+            <br>
+            <h3>Enter new password</h3>
+            <p>Please enter your new password twice so we can verify you typed it in correctly.:</p>
+            <form class="form" method="POST">
+                {% csrf_token %}
+                <div class="form__field">
+                    {{form.as_p}}
+                </div>
+                <input class="btn btn--sub btn--lg  my-md" type="submit" value="Submit" />
+            </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock content %}
